@@ -6,6 +6,8 @@ import { Index } from './Pages/Index'
 
 export const AppRoutes = () =>{
     return (
-
+ <Router>
+      <AppRoutes />
+ </Router>
     )
 }
