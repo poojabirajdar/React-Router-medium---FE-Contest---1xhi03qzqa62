@@ -6,8 +6,10 @@ import { Index } from './Pages/Index'
 
 export const AppRoutes = () =>{
     return (
- <Router>
-      <AppRoutes />
- </Router>
+ <Switch>
+      <Route path="/bgcolor/:colorname" component={BackgroundColorChanger} />
+      <Route path="/calculator" component={Calculator} />
+      <Route exact path="/" component={Index} />
+    </Switch>
     )
 }
